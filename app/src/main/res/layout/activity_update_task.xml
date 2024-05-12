@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".UpdateActivity">
+    tools:context=".UpdateTaskActivity">
 
     <TextView
         android:id="@+id/editTaskHeading"
@@ -35,7 +35,7 @@
         android:hint="Enter the title"
         android:padding="12dp"
         android:textSize="20sp"
-        android:layout_below="@id/updateTitleEditText"
+        android:layout_below="@id/editTaskHeading"
         android:background="@drawable/orange_border"
         android:layout_marginTop="16dp"
         android:maxLines="1"
