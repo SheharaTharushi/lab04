@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:fontFamily="@font/poppins"
         android:text="Edit Task"
-        android:textColor="@color/orange"
+        android:textColor="@color/green"
         android:textSize="24sp" />
 
     <ImageView
@@ -40,6 +40,20 @@
         android:layout_marginTop="16dp"
         android:maxLines="1"
         android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:id="@+id/updateContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@id/updateTitleEditText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="12dp"/>
+
 
 
 </RelativeLayout>

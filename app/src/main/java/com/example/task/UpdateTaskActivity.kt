@@ -27,10 +27,12 @@ class UpdateTaskActivity : AppCompatActivity() {
 
         val task = db.getTaskById(taskId)
         binding.updateTitleEditText.setText(task.title)
+        binding.updateContentEditText.setText(task.content)
 
         binding.updateSavebutton.setOnClickListener {
             val newTitle = binding.updateTitleEditText.text.toString()
-            val updatedTask = Task(taskId, newTitle)
+            val newContent = binding.updateTitleEditText.text.toString()
+            val updatedTask = Task(taskId, newTitle, newContent)
             db.updateTask(updatedTask)
             finish()
             Toast.makeText(this,"Changes Saved", Toast.LENGTH_SHORT).show()

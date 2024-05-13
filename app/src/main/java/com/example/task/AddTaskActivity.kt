@@ -21,7 +21,8 @@ class AddTaskActivity : AppCompatActivity() {
 
         binding.savebutton.setOnClickListener {
             val title = binding.titleEditText.text.toString()
-            val task = Task(0, title)
+            val content = binding.contentEditText.text.toString()
+            val task = Task(0, title, content)
             db.insertTask(task)
             finish()
             Toast.makeText(this, "Task Saved", Toast.LENGTH_SHORT).show()
